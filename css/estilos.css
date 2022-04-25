@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav ul li a {
+    list-style: none;
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+footer {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(230, 101, 15);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .iconos {
+    color: aquamarine;
+}
+
+
+.main__inicio div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main__inicio div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.main__inicio div p{
+    font-family: 'Merriweather', serif;
+    color: bisque;
+    width: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 26%;
+    left: 25%;
+}
+
+.inicio {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://fondosmil.com/fondo/15557.jpg);
+    background-position: 80%;
+    display: grid;
+    grid-template-areas: "ele1 ele2";  
+}
+
+.inicio .mapa{
+    border-radius: 20%;
+    grid-area: ele1
+}
+
+.inicio p {
+    font-family: 'Merriweather', serif;
+    color: cornsilk;
+    font-weight: bolder;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-area: ele2;
+}
+
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    background: coral;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "ele2 ele1"
+    "ele3 ele1"
+}
+
+.nosotros-imagen{
+    width: 100vh;
+    height: 100vh;
+    grid-area: ele1;
+}
+
+.nosotros-titulo {
+    text-align: center;
+    margin: 2rem;
+    font-family: "Merriweather", serif;
+    font-weight: bolder;
+    grid-area: ele2;
+}
+
+.nosotros-parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    grid-area: ele3;
+}
+
